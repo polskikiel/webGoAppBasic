@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "Database": {
+    "Type": "MySQL",
+    "MySQL": {
+      "Username": "root",
+      "Password": "1234",
+      "Name": "mojabaza",
+      "Hostname": "127.0.0.1",
+      "Port": 3306,
+      "Parameter": "?parseTime=true"
+    }
+  },
+ /* "Server": {
+    "Hostname": "",
+    "UseHTTP": true,
+    "UseHTTPS": false,
+    "HTTPPort": 80,
+    "HTTPSPort": 443,
+    "CertFile": "tls/server.crt",
+    "KeyFile": "tls/server.key"
+  }*/
+  "Template": {
+    "Root": "base",
+    "Children": [
+      "partial/menu",
+      "partial/footer"
+    ]
+  },
+  "View": {
+    "BaseURI": "/",
+    "Extension": "tmpl",
+    "Folder": "template",
+    "Name": "blank",
+    "Caching": true
+  }
+
+}
