@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{template "title" .}}</title>
+
+    <link rel="icon" type="image/png" href="/static/favicons/favicon-32x32.png" sizes="32x32">
+
+{{CSS "//fonts.googleapis.com/css?family=Open+Sans:300,400,bold,italic"}}
+{{CSS "static/css/global.css"}}
+
+{{template "head" .}}
+</head>
+<body>
+{{template "menu.tmpl" .}}
+
+<h1>{{.h1}}</h1>
+
+{{template "content" .}}
+{{template "foot" .}}
+</body>
+</html>
